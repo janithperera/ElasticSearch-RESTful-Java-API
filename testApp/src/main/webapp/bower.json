@@ -1,0 +1,19 @@
+{
+  "name": "testApp",
+  "description": "Test application with JAX-RS, ElasticSearch and AngularJS",
+  "main": "",
+  "authors": [
+    "Janith"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "angularjs#^1.7.2",
+    "bootstrap-css": "^3.3.7",
+    "jquery": "^3.3.1",
+    "angular-route": "^1.7.2"
+  },
+  "install": {
+    "path": "/libs"
+  }
+}

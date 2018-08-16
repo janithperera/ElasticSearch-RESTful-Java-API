@@ -1,0 +1,76 @@
+<nav class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="http://localhost:8080/testApp/#/">Employee
+				Management </a>
+		</div>
+		<div class="nav navbar-nav navbar-right"
+			id="bs-example-navbar-collapse-1"></div>
+	</div>
+</nav>
+
+<div class="col-md-6 col-center-block" style="padding-top: 50px">
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<div class="panel-title" style="text-align: center">ADD EMPLOYEE</div>
+		</div>
+		<div style="padding: 10px" ng-controller="employeeController">
+			<div ng-show="error" class="alert alert-danger">{{errorMessage}}</div>
+			<form class="form" ng-submit="add()">
+				<div class="form-group">
+					<label>NAME</label> <input type="text" class="form-control"
+						ng-model="form.name" required>
+				</div>
+				<div class="form-group">
+					<label>ADDRESS</label> <input type="text" class="form-control"
+						ng-model="form.address" required>
+				</div>
+				<div class="form-group">
+					<label>NIC</label> <input type="text" class="form-control"
+						ng-model="form.nic" required>
+				</div>
+				<div class="form-group">
+					<label>MOBILE</label> <input type="text" class="form-control"
+						ng-model="form.mobile" required>
+				</div>
+				<div class="form-group">
+					<label>DEPARTMENT</label> <select class="form-control"
+						ng-model="form.department" required>
+						<option>Human resources</option>
+						<option>Finance</option>
+						<option>Purchasing</option>
+						<option>Stores</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>ROLE</label> <select class="form-control"
+						ng-model="form.role" required>
+						<option>Manager</option>
+						<option>Supervisor</option>
+						<option>Technician</option>
+						<option>Developer</option>
+					</select>
+				</div>
+				<div>
+					<button type="submit" class="btn btn-primary" style="width: 100%">ADD</button>
+				</div>
+			</form>
+		</div>
+		<div style="padding-left: 10px; padding-right: 10px">
+			<div
+				style="border-top: 1px solid #888; padding-top: 10px; font-size: 85%">
+				<div>
+					<p>
+						<a href="http://localhost:8080/testApp/#/">View all employees</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

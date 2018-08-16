@@ -1,0 +1,26 @@
+.col-center-block {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+body{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+img{
+  width: 100%;
+}
+
+object{
+	width: 100%;
+}
+
+.btnctrl{
+	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}

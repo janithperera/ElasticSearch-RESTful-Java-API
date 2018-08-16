@@ -1,0 +1,92 @@
+<nav class="navbar navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#!/">Employee Management</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#!add">ADD EMPLOYEE</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class=" container">
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<div class="panel-title" style="text-align: center">UPLOAD A NEW PROFILE PICTURE</div>
+		</div>
+		<div>
+			<form>
+				<div class="form-group row" style="padding-top: 20px;">
+					<label for="pic" class="col-sm-2 col-form-label">Select a
+						new profile picture</label>
+					<div class="col-sm-8">
+						<input type="file" file-model="picture" id="pic">
+					</div>
+					<div class="col-sm-2">
+						<button type="submit" class="btn btn-primary" style="width: 100%"
+							ng-click="upload()">UPLOAD</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<div class="panel-title" style="text-align: center">EMPLOYEE DETAILS</div>
+		</div>
+		<ul class="row"
+			style="list-style-type: none; padding-top: 20px; padding-right: 35px;">
+			<li ng-repeat="image in images">
+				<div class="col-md-4 col-sm-6">
+					<span class="thumbnail">
+						<div class="image">
+							<img ng-src="{{image}}" />
+						</div>
+					</span>
+				</div>
+			</li>
+		</ul>
+		<div style="padding: 10px">
+			<form class="form">
+				<div class="form-group">
+					<label>NAME</label> <input type="text" class="form-control"
+						ng-model="employee.id" disabled>
+				</div>
+				<div class="form-group">
+					<label>NAME</label> <input type="text" class="form-control"
+						ng-model="employee.name" disabled>
+				</div>
+				<div class="form-group">
+					<label>ADDRESS</label> <input type="text" class="form-control"
+						ng-model="employee.address" disabled>
+				</div>
+				<div class="form-group">
+					<label>NIC</label> <input type="text" class="form-control"
+						ng-model="employee.nic" disabled>
+				</div>
+				<div class="form-group">
+					<label>MOBILE</label> <input type="text" class="form-control"
+						ng-model="employee.mobile" disabled>
+				</div>
+				<div class="form-group">
+					<label>DEPARTMENT</label> <select class="form-control"
+						ng-model="employee.department" disabled>
+						<option>Human resources</option>
+						<option>Finance</option>
+						<option>Purchasing</option>
+						<option>Stores</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>ROLE</label> <select class="form-control"
+						ng-model="employee.role" disabled>
+						<option>Manager</option>
+						<option>Supervisor</option>
+						<option>Technician</option>
+						<option>Developer</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
