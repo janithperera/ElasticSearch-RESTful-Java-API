@@ -1,4 +1,4 @@
-# ElasticSearch-RESTful-API-java
+# ElasticSearch-RESTful-Java-API
 
 A RESTful java API with ElasticSearch as Database and AngularJS as Frontend
 
